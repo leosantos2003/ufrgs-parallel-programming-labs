@@ -1,0 +1,29 @@
+>> gcc mandelbrot.c -o mandelbrot -fopenmp -lm
+
+>> ./mandelbrot
+
+Tempo total = 58.69484
+
+>> export OMP_NUM_THREADS=1
+
+>> ./mandelbrot
+
+Tempo total = 52.97065 segundos.
+
+>> export OMP_NUM_THREADS=2
+
+>> ./mandelbrot
+
+Tempo total = 24.12523 segundos.
+
+>> export OMP_NUM_THREADS=4
+
+>> ./mandelbrot
+
+Tempo total = 23.62567 segundos.
+
+>> export OMP_NUM_THREADS=8
+
+>> ./mandelbrot
+
+Tempo total = 17.99883 segundos.
